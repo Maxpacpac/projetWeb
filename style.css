@@ -1,0 +1,746 @@
+body{
+    background-color: rgb(235, 235, 235);
+    margin: 0px;
+    height: 100%;
+}
+.contenu{
+    display: grid; /*grid*/
+    min-height:100%;
+    position:relative;
+    padding-top: 0em;
+    padding-bottom: 18em;
+    /*grid-template-columns: 1fr;*/
+}
+
+
+.bartop{
+    display: flex;
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+        justify-content: space-between;
+        background-color: white;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        border-bottom: 1px solid #8a8a8a;
+}
+
+.droite{
+    display: flex;
+}
+
+.contenu >.bartop > .droite>.siteTitle{
+    margin-right: 40px;
+    margin-left: 10px;
+}
+.contenu >.bartop > .droite>.verticalLine{
+    margin-top: -5px;
+    font-size: 140%;
+}
+.contenu>.bartop>.logo img{
+    height: 30px;
+    padding-right: 50px;
+}
+
+.contenu >.bartop > .droite> div{
+    display: flex;
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.contenu >.pageWeb>.ImageEtTexte > .backgroundimage> img{
+    width: 100%;
+}
+
+
+.beautext{
+     height : 25px;
+}
+
+.beautext a{
+     color: #8a8a8a;
+     text-decoration: none;   
+}
+
+.beautext:hover a{
+    transition: color 1s;
+    color: black;
+}
+
+.pageWeb{
+    display: block; /*grid*/
+    /*grid-template-columns: 1fr;*/
+}
+
+.ImageEtTexte{
+    position: relative;
+}
+
+.backgroundimage{
+    display: flex;
+    background-size: auto;
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.backgroundimage>img{
+    opacity:0.3;
+}
+
+.textsurimage{
+    font-weight: 600;
+    font-size: 200%;
+    color: transparent;
+    position: absolute;
+    /*top:0;*/
+    /*display: flex;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    /*flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;*/
+
+
+}
+
+.ImageEtTexte:hover .textsurimage{
+    transition: 1s;
+    color: white;
+}
+
+.createurbeaugosse{
+    display: flex;
+    margin-top: 1px solid black;
+}
+.contenu>.createurbeaugosse>div{
+    margin-top: 20px;
+    margin-left: 30px;
+    border-bottom: 1px solid black;
+}
+
+.basDePage>.creditPage{
+    display: absolute;
+    bottom: 0;
+    background-color: black;
+}
+
+.lineStylish{
+    width: 95%;
+    border-top: 1px solid rgba(255, 255, 255, 0.767);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.basDePage>.creditPage>.lineStylish>p{
+    color: white;
+}
+
+.basDePage>.creditPage>.lineStylish>a{
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-right: 50px;
+    color: white;
+}
+
+.basDePage{
+    /*position: absolute;
+    bottom: 0;
+    width: 100%;*/
+
+
+    position: absolute;
+    left: 0;
+    bottom:0;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+/*La boutique*/
+
+.pageBoutique{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+}
+
+
+/*.imageAchat{
+    display: block;
+    width: 300px;
+    max-width: 500px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    background-color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 8px 8px 12px #aaa;
+    padding: 10px;
+}*/
+
+.namePage{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 90px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold; 
+}
+
+.imageAchat{
+
+    display: block;
+    margin-left: 50px;
+    margin-right: auto;
+    border-radius: 5px;
+    border-bottom: 1px solid transparent;
+}
+
+.imageAchat img{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+    height: 100px;
+    
+}
+
+.imageAchat:hover{
+    background-color: rgb(243, 243, 243);
+    border-bottom :1px solid black;
+    transition:0.5s;
+}
+
+.testBargain{
+    color: transparent;
+}
+
+.imageAchat:hover .testBargain{
+    font-size: 300;
+    color: rgb(20, 13, 85);
+    transition: 1s;
+}
+
+/* Page A propos */
+
+.contenu .testAnimation{
+    display: flex;
+}
+
+.aboutImage {
+    position: relative;
+}
+.aboutImage img{
+
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    border-radius: 3px;
+    height: 100px;
+    
+}
+
+.aboutImagediscord {
+    position: relative;
+}
+.aboutImagediscord img{
+
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    border-radius: 3px;
+    height: 100px;
+    
+}
+
+.aboutImagetwitch {
+    position: relative;
+}
+.aboutImagetwitch img{
+
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    border-radius: 3px;
+    height: 100px;
+    
+}
+  
+.createur{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contenu>.createur>div>img{
+    width: 80%;
+}
+.contenu>.createur>div>h1{
+    font-family: 'Roboto', sans-serif;
+}
+/* barre des reseaux sociaux */
+
+
+.basDePage>.socialNetwork{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: auto;
+    bottom: 0px; 
+    left: 0px;
+
+    /*background: rgb(187, 187, 187);*/
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    /*border-top: 5px solid rgba(41, 41, 41, 0.918);*/
+    /*border-top: 1px solid rgb(71, 71, 71);*/
+    margin-top: 40px;
+}
+
+/*
+.textbottombar{
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+
+}*/
+
+.contenu>.basDePage>.socialNetwork li{
+    display: inline-flex;
+    border-right: white;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.contenu>.basDePage>.socialNetwork>li>a>img{
+    display: flex;
+    height: 70px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.Aproposdenous{
+    display: inline-block;
+    background:  rgb(187, 187, 187);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+}
+
+
+
+/*   TEST POUR LA PAGE PERSO */
+
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.bodypersonnalisation>a>img{
+    display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        height: 100px;
+        box-shadow: 8px 8px 12px #aaa;
+
+}
+.bodypersonnalisation h1{
+    text-align: center;
+}
+.bodypersonnalisation html{
+    background: #e7e7e7;
+}
+
+form{
+    width:100%;
+    max-width: 1000px;
+    border: 1px solid grey;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 8px 8px 12px #aaa;
+    padding: 20px;
+}
+
+/*.bodypersonnalisation div{
+    margin:5px;
+}*/
+
+input{
+    margin-right: 15px;
+    border-top: none;
+    border-left: none;
+    border-right:none;
+    border-bottom-width: 1px;
+    border-bottom-style: groove;
+    border-bottom-color:rgb(141, 141, 141);
+}
+#Prenom{
+    margin-right: 15px;
+    padding: 3px;
+    display:flex;
+}
+#Prenom:invalid{
+    border-bottom-color:red;
+    caret-color:red;
+}
+
+#Nom{
+    margin-right: 15px;
+    padding: 3px;
+    display:flex;
+}
+#Nom:invalid{
+    border-bottom-color:red;
+    caret-color:red;
+}
+#Mail{
+    margin-right: 15px;
+    padding: 3px;
+    display:flex;
+}
+#Mail:invalid{
+    border-bottom-color:red;
+    caret-color:red;
+}
+#Button{
+    margin-top: 15px;
+}
+.Bas{
+    text-transform: uppercase;
+    border:none;
+    box-shadow: black 2px 2px 2px;
+    background-color: rgba(32, 144, 250, 0.753);
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px #aaa;
+    text-shadow:0 0 4px rgb(231, 229, 229);
+    padding:5px;
+    margin-right:15px;
+    cursor: pointer;
+    transition: color 1s;
+}
+button:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+button:disabled{
+    cursor:not-allowed;
+    background-color: rgb(155, 153, 153);
+    color: rgb(184, 10, 10);
+}
+
+#Add_inter{
+    cursor:not-allowed;
+    background-color: rgb(155, 153, 153);
+    color: rgb(184, 10, 10);
+}
+
+#Champs{
+    display:flex;
+    flex-wrap: wrap;
+}
+.Tab{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:50px;
+    width: 100%;
+    min-width: 1000px;
+}
+
+.Separation{
+    margin-top: 150px;
+}
+
+.Cache_cache{
+    display:none;
+}
+
+.bodypersonnalisation th{
+    padding:10px;
+    border:solid 2px black;
+    border-bottom: none;
+    text-align: center;
+}
+
+#Navigation{
+    text-align: center;
+}
+
+.Dessus{
+    padding:5px;
+    margin-top: 10px;
+    margin-right: 15px; 
+    background-color: white;
+    cursor: pointer;
+    box-shadow: rgb(161, 161, 161) 2px 2px 2px;
+    border-radius: 4px;
+}
+#prec_suiv{
+    padding:15px;
+    display: flex;
+    align-content: space-between;
+}
+
+#suivant{
+    margin-left: auto;
+}
+
+#Texte{
+    margin:10px;
+}
+
+#Sous_Menu{
+    display : flex;
+    align-items: center;
+    margin: 50px;
+    width:500px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+#Sous_Menu>div{
+    display:flex;
+    padding-right: 50px;
+    font-size: larger;
+
+}
+
+#Sous_Menu>div>strong>a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5%;
+}
+
+
+#Sous_Menu>div>strong>a:visited{
+    text-decoration: none;
+    color: rgb(38, 0, 100);
+}
+
+#Sous_Menu>div:hover{
+    cursor:pointer;
+}
+
+.Titre_h3{
+    margin-top: 55px;
+}
+
+.createurbeaugosse>div>a:visited, .createurbeaugosse>div>a:link{
+    text-decoration: none;
+    color: black;
+}
+
+.Pers_contenue{
+    display: block;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.Pers_contenue>div{
+    background-color: white;
+}
+
+.Pers_contenue>div>img{
+    height: 100px;
+}
+
+.Pers_contenue>div{
+    margin-top: 100px;
+    border-bottom: 1px solid black;
+    border-top: 2px solid black;
+}
+
+.Pers_contenue>div>p{
+    background-color: black;
+    height: 30px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+
+#Resultat{
+    display: block;
+    background-color: black;
+    height: 50px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    border-radius: 5%;
+    font-weight: 900;
+    text-align: center;
+
+}
+
+#cont{
+    margin-bottom: 0px;
+    padding-bottom: 2em;
+}
+
+
+@media screen and (max-width: 950px){
+
+    
+    .bartop{
+        display: flex;
+        text-align: center;
+        z-index: 1;
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        border-bottom: 1px solid #8a8a8a;
+    }
+    .droite{
+        display: block;
+    }
+    
+    .contenu >.bartop > .droite>.siteTitle{
+        margin-right: 40px;
+        margin-left: 10px;
+    }
+    .contenu >.bartop > .droite>.verticalLine{
+        margin-top: -5px;
+        font-size: 140%;
+    }
+    .contenu>.bartop>.logo img{
+        height: 15px;
+        align-items: center;
+    }
+    
+    .contenu >.bartop > .droite> div{
+        display: inline-block;
+        float: none;
+        text-align: center;
+        font-size: 0.8em;
+        text-transform: uppercase;
+    }
+    
+    .contenu >.pageWeb>.ImageEtTexte > .backgroundimage> img{
+        width: 100%;
+    }
+
+    .textsurimage{
+        font-weight: 600;
+        font-size: 100%;
+        color: transparent;
+        position: absolute;
+        /*top:0;*/
+        /*display: flex;*/
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+    
+        /*flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+        padding-left: 150px;
+        padding-right: 150px;*/
+    
+    
+    }
+
+
+
+    .imageAchat{
+
+        display: block;
+        margin-left: 30px;
+        border-radius: 5px;
+        border-bottom: 1px solid transparent;
+    }
+    
+    .imageAchat img{
+    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 3px;
+        height: 60px;
+        
+    }
+    
+
+    .imageAchat:hover{
+        background-color: rgb(243, 243, 243);
+        border-bottom :1px solid black;
+        transition:0.5s;
+    }
+    
+    .testBargain{
+        color: transparent;
+    }
+    
+    .imageAchat:hover .testBargain{
+        font-weight: 0.8em;
+        color: rgb(20, 13, 85);
+        transition: 1s;
+    }
+
+    .contenu>.pageBoutique>.imageAchat>div>.textBargain{
+        font-size: 0.7em;
+    }
+
+    .namePage{
+        white-space: nowrap;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.9em;
+        margin-top: 130px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold; 
+    }
+
+    .createurbeaugosse{
+        display: flex;
+    }
+    .contenu>.createurbeaugosse>div{
+        margin-top: 20px;
+        margin-left: 30px;
+
+        border-bottom: transparent;
+
+    }
+
+}
