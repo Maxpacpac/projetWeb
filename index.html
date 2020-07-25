@@ -4,161 +4,8 @@
         <meta charset="utf-8" />
         <title>Le projet de la muerte</title>
         <link rel="stylesheet" href="style.css" />
-
-        <script>
-            
-            function Changement_couleur(couleur, type){
-                if (type==1){
-                    var pos = document.getElementById("CapPrice");
-                    if(couleur==1){
-                        var img = document.createElement("img");
-                        img.src = "Capot_noir.png";
-                        img.id = "CapInf";
-                        img.name = "Noir";
-                        Delete(type);
-                        Ajouter(img, type);
-                        pos.innerHTML= "Le prix est de 50 euros";
-                        pos.name = "50";
-                    }
-                    if(couleur==2){
-                        var img = document.createElement("img");
-                        img.src = "Capot_rouge.png";
-                        img.id = "CapInf";
-                        img.name = "Rouge";
-                        Delete(type);
-                        Ajouter(img, type);
-                        pos.innerHTML= "Le prix est de 150 euros";
-                        pos.name = "150";
-                    }
-                    if(couleur==3){
-                        var img = document.createElement("img");
-                        img.src = "Capot_vert.png";
-                        img.id = "CapInf";
-                        img.name = "Vert";
-                        Delete(type);
-                        Ajouter(img, type);
-                        pos.innerHTML="Le prix est de 75 euros";
-                        pos.name = "75";
-                    }
-
-                }
-                if(type==2){
-                    var pos = document.getElementById("CarrosPrice");
-                    if(couleur==1){
-                        var img = document.createElement("img");
-                        img.src = "Jeep_noir.png";
-                        img.id = "CarrosInf";
-                        img.name = "Noir";
-                        Delete(type);
-                        Ajouter(img, type);
-                        pos.innerHTML= "Le prix est de 200 euros";
-                        pos.name = "200";
-                    }
-                    if(couleur==2){
-                        var img = document.createElement("img");
-                        img.src = "Jeep_rouge.png";
-                        img.id = "CarrosInf";
-                        img.name = "Rouge";
-                        Delete(type);
-                        Ajouter(img, type);
-                        pos.innerHTML= "Le prix est de 350 euros";
-                        pos.name = "350";
-                    }
-                    if(couleur==3){
-                        var img = document.createElement("img");
-                        img.src = "Jeep_vert.png";
-                        img.id = "CarrosInf";
-                        img.name = "Vert";
-                        Delete(type);
-                        Ajouter(img, type);
-                        pos.innerHTML="Le prix est de 475 euros";
-                        pos.name = "475";
-                    }
-                }
-                if(type==3){
-                    var pos = document.getElementById("RouePrice");
-                    if(couleur==1){
-                        var img = document.createElement("img");
-                        img.src = "Roue_Classique.png";
-                        img.id = "RoueInf";
-                        img.name = "Classique";
-                        Delete(type);
-                        Ajouter(img, type);
-                        pos.innerHTML= "Le prix est de 50 euros";
-                        pos.name = "50";
-                    }
-                    if(couleur==2){
-                        var img = document.createElement("img");
-                        img.src = "Roue_Drift.png";
-                        img.id = "RoueInf";
-                        img.name = "Drift"
-                        Delete(type);
-                        Ajouter(img, type);
-                        pos.innerHTML= "Le prix est de 75 euros";
-                        pos.name = "75";
-                    }
-                    if(couleur==3){
-                        var img = document.createElement("img");
-                        img.src = "Roue_Im.png";
-                        img.id = "RoueInf";
-                        img.name="Im"
-                        Delete(type);
-                        Ajouter(img, type);
-                        pos.innerHTML="Le prix est de 5 euros";
-                        pos.name = "5";
-                    }
-                }
-                Résultat_final();
-            }
-
-
-            function Delete(type){
-                if(type==1){
-                    var Capot = document.getElementById("CapInf");
-                    Capot.parentNode.removeChild(Capot);
-                }
-                if(type==2){
-                    var Carrosserie = document.getElementById("CarrosInf");
-                    Carrosserie.parentNode.removeChild(Carrosserie);
-                }
-                if(type==3){
-                    var Roue = document.getElementById("RoueInf");
-                    Roue.parentNode.removeChild(Roue);
-                }
-            }
-            
-            function Ajouter(img, type){
-                if(type==1){
-                    var Capot = document.getElementById("CapotSup");        
-                    Capot.appendChild(img);
-                }
-                if(type==2){
-                    var Carros = document.getElementById("CarrosserieSup");        
-                    Carros.appendChild(img);
-                }
-                if(type==3){
-                    var Roue = document.getElementById("RoueSup");
-                    Roue.appendChild(img);
-                }
-            }
-
-            
-
-            function Résultat_final(){
-                var Cap = document.getElementById("CapPrice");
-                var Carros = document.getElementById("CarrosPrice");
-                var Roue = document.getElementById("RouePrice");
-                var Result = document.getElementById("Resultat");
-                var R = parseInt(Cap.name,10) + parseInt(Carros.name,10) + parseInt(Roue.name,10);
-                console.log(Cap.name);
-                console.log(R);
-                Result.innerHTML="Le prix approximatif est : "+R;
-                console.log(Result);
-                
-            }
-
-        </script>
     </head>
+
     
     <body>
         <div class="contenu">
@@ -183,8 +30,8 @@
                         <a href="Personnalisation.html">Personnalisation</a>
                     </div>
                     <div class="beautext">
-                        <a href="boutique.html">Boutique</a>
-                    </div>
+                        <a href="boutique.html">Boutique</a> 
+                    </div>         
                     <div class="beautext">
                         <a href="about.html">A propos</a> 
                     </div>      
@@ -198,56 +45,27 @@
             </div>
 
             <div class="namePage">
-                Personnalisation
+                Accueil
             </div>
 
-            <div class="Pers_contenue">
-                <div id="CapotSup">
-                    <p>
-                            Capot Personnalisé
-                    </p>
-                    <img id="CapInf" src="Capot_rouge.png">
-                    <div id="CapRight">
-                        <p id="CapPrice">Le prix est de 150 euros</p>
-                        <div class="ButtonSpace">
-                            <button onclick="Changement_couleur(1, 1)">Noir</button>
-                            <button onclick="Changement_couleur(2, 1)">Rouge</button>
-                            <button onclick="Changement_couleur(3, 1)">Vert</button>
-                        </div>
+            <div class="pageWeb">
+                <div class="ImageEtTexte">
+                    <div class="backgroundimage">
+                        <img src="https://i.ytimg.com/vi/R7yCCcVJE54/maxresdefault.jpg">
                     </div>
-                </div>
-                <div id="CarrosserieSup">
-                    <p>
-                        Carosserie Personnalisée
-                    </p>
-                    <img id="CarrosInf" src="Jeep_rouge.png">
-                    <div id="CarrosRight">
-                        <p id="CarrosPrice">Le prix est de 350 euros</p>
-                        <div class="ButtonSpace">
-                            <button onclick="Changement_couleur(1, 2)">Noir</button>
-                            <button onclick="Changement_couleur(2, 2)">Rouge</button>
-                            <button onclick="Changement_couleur(3, 2)">Vert</button>
-                        </div>
-                    </div>
-                </div>
-                <div id="RoueSup">
-                    <p>
-                        Roues Personnalisées
-                    </p>
-                    <img id="RoueInf" src="Roue_Classique.png">
-                    <div id="RoueRight">
-                        <p id="RouePrice">Le prix est de 50 euros</p>
-                        <div class="ButtonSpace">
-                            <button onclick="Changement_couleur(1, 3)">Classique</button>
-                            <button onclick="Changement_couleur(2, 3)">Drift</button>
-                            <button onclick="Changement_couleur(3, 3)">Original</button>
-                        </div>
-                    </div>
-                </div>
-                <p id="Resultat"> </p>
-            </div>
-            
 
+                    <div class="textsurimage">
+                        <center>
+                            Jeep Barbie Lovers: <br><br>
+
+                            Salut à tous les passionnés de Jeep, de Barbie ou de Jeep Barbie <br><br>
+                            Ici on vous propose d'en connaitre plus sur ce sport
+                        </center>
+
+                    </div> 
+                </div>
+
+            </div>
             <div class="createurbeaugosse">
                 <div>
                     LES MAGNIFIQUES CREATEURS DU SITE :
@@ -320,15 +138,4 @@
 
         </div>
     </body>
-    <script>
-        window.onload = function (){
-            var Cap = document.getElementById("CapPrice");
-            var Carros = document.getElementById("CarrosPrice");
-            var Roue = document.getElementById("RouePrice");
-            Cap.name = "150";
-            Carros.name = "350";
-            Roue.name = "50";
-            Résultat_final();
-        }           
-    </script>
 </html>
